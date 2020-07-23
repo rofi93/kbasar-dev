@@ -25,3 +25,9 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+## Run app
+
+`sudo docker build -t 'kbasar-dev' .` <br>
+`sudo docker run -d -it -p 4200:80/tcp kbasar-dev`
