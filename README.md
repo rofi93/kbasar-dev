@@ -29,5 +29,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Run app
 
-`sudo docker build -t 'kbasar-dev' .` <br>
-`sudo docker run -d -it -p 4200:80/tcp kbasar-dev`
+`npm run start`
