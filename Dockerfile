@@ -1,4 +1,4 @@
-FROM node:12-alpine as build
+FROM node:12.18.2-slim as build
 
 # Create app directory
 WORKDIR /app
