@@ -19,7 +19,7 @@ COPY . /app/
 ENV PATH /app/node_modules/.bin:$PATH
 
 # Run app
-RUN ng build --prod
+RUN node --max_old_space_size=2048 node_modules/@angular/cli/bin/ng build --prod
 
 
 FROM nginx:1.19.1-alpine
