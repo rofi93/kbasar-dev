@@ -1,0 +1,9 @@
+<div class="d-flex flex-wrap flex-items-start flex-justify-center mt-1 mt-md-3">
+  <div *ngFor="let s of socialMedia" class="mr-3 mb-3 social-media">
+    <a [attr.aria-label]="s.label" [attr.href]="s.href"
+       [attr.title]="s.label" class="tooltipped tooltipped-s" target="_blank">
+      <span [innerHTML]="s.icon_svg"></span>
+      <span class="d-none">{{ s.label }}</span>
+    </a>
+  </div>
+</div>

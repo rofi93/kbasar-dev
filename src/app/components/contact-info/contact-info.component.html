@@ -1,0 +1,14 @@
+<div *ngFor="let p of profileBio" class="d-md-inline-block mr-3 text-white">
+  <svg [attr.aria-label]="p.label" [attr.class]="p._class" [attr.viewbox]="p.viewBox" [attr.width]="p.width"
+       fill="#ffffff" height="20" role="img" version="1.1">
+    <path [attr.d]="p.path" fill-rule="evenodd"></path>
+  </svg>
+  <span *ngIf="p.href.length > 0">
+        <a class="text-white" href="{{ p.href }}" target="_blank">
+          {{ p.text }}
+        </a>
+      </span>
+  <span *ngIf="p.href.length == 0">
+        {{ p.text }}
+      </span>
+</div>
